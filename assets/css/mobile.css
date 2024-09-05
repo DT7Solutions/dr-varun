@@ -653,7 +653,7 @@
     }
 
     .index3-banner-section .banner-txt-section {
-        margin-top: 0px;
+        margin-top: 10%;
         padding-left: 0;
     }
 
@@ -662,11 +662,11 @@
     }
 
     .index3-banner-section .banner-txt-section p {
-        margin-bottom: 25px;
+        margin-bottom: 2.5%;
     }
 
     .index3-banner-section .banner-inner-con {
-        grid-template-columns: 49% 47%;
+        grid-template-columns: 57% 41%;
     }
 
     .index3-banner-image-con>figure::before {

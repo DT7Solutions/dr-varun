@@ -78,6 +78,7 @@ h5 {
     text-decoration: none;
     background: var(--accent);
     color: var(--primary-color);
+    transition: .4s ease-in-out;
 }
 
 .padding-top {
@@ -236,8 +237,8 @@ h5 {
     color: var(--primary-color);
 }
 
-.banner-btns a {
-    transition: .4s ease-in-out;
+.banner-btns.generic-btn {
+    margin: 2.5% 0%;
 }
 
 .banner-btns.generic-btn a:hover {
@@ -2541,8 +2542,8 @@ h5 {
 
 .index3-banner-section .banner-txt-section h1 {
     color: var(--accent);
-    font-size: 54px;
-    line-height: 54px;
+    font-size: 52px;
+    line-height: 52px;
     font-weight: 500;
 }
 

@@ -130,8 +130,8 @@
     }
 
     .index3-banner-image-con>figure::before {
-        width: 475px;
-        height: 475px;
+        width: 550px;
+        height: 550px;
     }
 
     .index3-banner-image-con .inquiry-top-img {
@@ -175,7 +175,7 @@
 
 @media only screen and (max-width: 1600px) {
     .container-fluid {
-        padding: 0 12%;
+        padding: 0 7.5%;
     }
 
     .banner-main-section {
@@ -240,11 +240,11 @@
     }
 
     .padding-top {
-        padding-top: 110px;
+        padding-top: 5%;
     }
 
     .padding-bottom {
-        padding-bottom: 110px;
+        padding-bottom: 5%;
     }
 
     h2 {

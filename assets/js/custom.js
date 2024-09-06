@@ -22,6 +22,18 @@ btn.on('click', function(e) {
 });
 
 // Owl Carousel Initialization
+$('#owl-carousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: true,
+    responsive: {
+        0: { items: 1 },
+        500: { items: 1 },
+        600: { items: 1 },
+        700: { items: 1 },
+        1000: { items: 1 }
+    }
+  });
 $('#owl-carouselone').owlCarousel({
   loop: true,
   margin: 30,

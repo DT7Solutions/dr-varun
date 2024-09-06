@@ -577,11 +577,12 @@
     }
 
     .footer-inner-sec {
-        grid-template-columns: 27% 13.3% 19.6% 20%;
+        grid-template-columns: 35% 20% 25% 20%;
     }
 
     .footer-main-section {
-        padding-bottom: 60px;
+        max-height: 450px;
+        padding-bottom: 2.5%;
     }
 
     .footer-text-boxes {
@@ -666,7 +667,7 @@
     }
 
     .index3-banner-section .banner-inner-con {
-        grid-template-columns: 57% 41%;
+        grid-template-columns: 61% 36%;
     }
 
     .index3-banner-image-con>figure::before {
@@ -703,7 +704,7 @@
     }
 
     .index3-service-con {
-        gap: 28px;
+        gap: 20px;
     }
 
     .index3-about-section .about-video-box {
@@ -717,8 +718,8 @@
     }
 
     .index3-about-section .about-inner-con {
-        gap: 30px;
-        grid-template-columns: 45.8% 51.3%;
+        gap: 20px;
+        grid-template-columns: 48% 51%;
     }
 
     .index3-about-section .about-img-con figure img {
@@ -779,7 +780,7 @@
         margin-right: 5px;
     }
     .container-fluid {
-        padding: 0 6%;
+        padding: 0 5%;
     }
     /* project page responsive end */
 }

@@ -2349,13 +2349,18 @@ h5 {
     position: relative;
     border-top: 2px solid var(--button-color);
     border-radius: 15px;
-    padding: 40px 40px;
+    padding: 2.5%;
+    margin: 2.5% 7.5%;
     background: var(--primary-color);
     box-shadow: 6px 6px 83px 20px rgb(0 0 0 / 3%);
 }
 
 .patient-review-box:hover {
     border-color: var(--accent);
+}
+
+.patient-review-box img {
+    max-width: 150px;
 }
 
 .patient-reviews-sec .owl-carousel {
@@ -2398,7 +2403,7 @@ h5 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -67px;
+    bottom: -10%;
 }
 
 .patient-reviews-sec .owl-carousel .owl-dots button.active span {
@@ -2515,11 +2520,11 @@ h5 {
 }
 
 .blogpage-section {
-    padding: 5% 5% 10% !important;
+    padding: 5% 0% 7.5%!important;
 }
 
 .singleblog-section .main-box {
-    padding: 2.5% !important;
+    padding: 2.5% 2.5% 7.5%!important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -3934,4 +3939,30 @@ h5 {
 .singleblog-review img{
     border-radius: 50%;
     margin-bottom: 2.5%;
+}
+
+.singleblog-section .content5 .content{
+    padding: 2.5% 5% !important;
+}
+
+.singleblog-section .content4{
+    margin-bottom: 5% !important;
+}
+
+.singleblog-section .box5 .feed {
+    align-items: baseline;
+    margin-bottom: 7.5% !important;
+}
+
+.singleblog-section .box5 .feed .feed-image {
+    width: 25% !important;
+}
+
+.singleblog-section .box5 .feed:after {
+    content: "";
+    border-bottom: 1px solid var(--accent);
+    position: absolute;
+    width: 84%;
+    height: 80px !important;
+    left: 46px;
 }

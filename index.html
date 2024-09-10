@@ -417,47 +417,78 @@
                         <span class="sub-txt d-block" data-aos="fade-up" data-aos-duration="700">Book With Us Now</span>
                         <h2 data-aos="fade-up" data-aos-duration="700">Book an Appointment</h2>
                         <p data-aos="fade-up" data-aos-duration="700">Conveniently book your appointment with our top gastrosurgeons in South India for expert care.</p>
+                        
                         <form class="form-box" method="post" id="contactpage">
                             <ul class="list-unstyled">
                                 <li data-aos="fade-up" data-aos-duration="700">
-                                    <input type="text" name="fname" id="fname" placeholder="Your Name:">
+                                    <input type="text" name="fname" id="fname" placeholder="Your Name:" required>
                                     <i class="fas fa-user"></i>
                                 </li>
                                 <li data-aos="fade-up" data-aos-duration="700">
-                                    <input type="email" placeholder="Email address:" name="email" id="email">
+                                    <input type="email" placeholder="Email address:" name="email" id="email" required>
                                     <i class="fas fa-envelope"></i>
                                 </li>
                                 <li data-aos="fade-up" data-aos-duration="700">
-                                    <select name="department" id="department">
-                                        <option value="department">Choose Department</option>
-                                        <option value="gastroenterology">Gastroenterology</option>
-                                        <option value="gastrosurgery">Gastrosurgery</option>
-                                    </select>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <select name="doctor" id="doctor">
-                                        <option value="doctor">Choose Doctor</option>
-                                        <option value="doctor1">Dr. Ravi Kumar</option>
-                                        <option value="doctor2">Dr. Anjali Reddy</option>
-                                        <option value="doctor3">Dr. Arjun Patel</option>
-                                    </select>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <input placeholder="Date & Time" type="date" id="date">
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                                    <input type="tel" name="phone" id="phone" placeholder="Phone Number" pattern="^\d{10}$" required>
                                     <i class="fas fa-phone-alt"></i>
+                                </li>
+                                <li data-aos="fade-up" data-aos-duration="700">
+                                    <select name="department" id="department" required>
+                                        <option value="">Choose Department</option>
+                                        <option value="esophagus">Esophagus</option>
+                                        <option value="stomach">Stomach</option>
+                                        <option value="pancreas">Pancreas</option>
+                                        <option value="liver">Liver</option>
+                                        <option value="liver-transplantation">Liver Transplantation</option>
+                                        <option value="biliary">Biliary</option>
+                                        <option value="gall-bladder">Gall Bladder</option>
+                                        <option value="spleen">Spleen</option>
+                                        <option value="hernia">Hernia</option>
+                                        <option value="laparoscopic-surgery">Laparoscopic Surgery</option>
+                                        <option value="small-large-intestine">Small & Large Intestine</option>
+                                        <option value="rectum-anal-canal">Rectum & Anal Canal</option>
+                                        <option value="bariatric-surgery">Bariatric Surgery</option>
+                                        <option value="appendix">Appendix</option>
+                                        <option value="emergency-surgery">Emergency Surgery</option>
+                                    </select>
+                                </li>
+                                <li data-aos="fade-up" data-aos-duration="700">
+                                    <input type="date" name="date" id="date" required>
+                                </li>
+                                <li data-aos="fade-up" data-aos-duration="700">
+                                    <select name="time-slot" id="time-slot" required>
+                                        <option value="">Choose Time Slot</option>
+                                    </select>
                                 </li>
                             </ul>
                             <div class="submit-btn" data-aos="fade-up" data-aos-duration="700">
-                                <button type="submit" id="submit">
-                                    Make an Appointment
-                                </button>
+                                <button type="submit" id="submit">Make an Appointment</button>
                             </div>
-                        </form>
-                    </div>
-    
+                            <div id="form-message" class="hidden">
+                                <div id="success-svg" class="contact-card hidden">
+                                    <div id="success-message" class="form-submit-msg">
+                                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <!-- Updated success SVG icon -->
+                                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="#155724"/>
+                                        </svg>
+                                    </div>
+                                    <h2>Success</h2> 
+                                    <p>We received your message;<br/> we'll be in touch shortly!</p>
+                                </div>
+                                <div id="error-svg" class="contact-card hidden">
+                                    <div id="error-message" class="form-submit-msg">
+                                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <!-- Basic error SVG icon -->
+                                            <path d="M4 4l16 16m0-16L4 20" stroke="#721c24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <h2>Error</h2> 
+                                    <p>Sorry, something went wrong.<br/> Please try again later.</p>
+                                </div>
+                            </div>
+                        </form>                        
+                        
+                    </div>                    
                 </div>
             </div>
         </div>

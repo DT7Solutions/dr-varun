@@ -856,6 +856,56 @@ h5 {
     margin-bottom: 30px;
     grid-template-columns: 48.5% 48.5%;
 }
+.form-box ul li input,
+.form-box ul li select,
+.form-box ul li select option{
+    background: #f2f2f2;
+    color: #000 !important;
+}
+.form-box ul li #time-slot,
+.form-box ul li #time-slot option{
+    color: #008000 !important;
+}
+.form-box ul li #time-slot .slot-booked {
+    color: #ff0000 !important;
+}
+.form-box ul li #time-slot .slot-past {
+    color: #cccccc !important;
+}
+.hidden {
+    display: none;
+}
+.index3-contact-con .contact-form ul li span {
+    color: #ff0000;
+}
+.contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2.5%;
+    margin: 2.5%;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.form-submit-msg {
+    border-radius: 50%; 
+    height: 100px; 
+    width: 100px;  
+    margin: 0 auto;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+#success-message {
+    background: #d4edda;
+}
+#error-message {
+    background: #f8d7da
+}
 
 .contact-con .show>.btn-secondary.dropdown-toggle {
     color: #fff;

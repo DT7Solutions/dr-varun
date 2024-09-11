@@ -1503,8 +1503,8 @@
         position: absolute;
         z-index: 2;
         right: 0;
-        top: 40px;
-        width: 340px;
+        top: 100%;
+        width:  100%;
     }
 
     .navbar-toggler:focus {

@@ -1297,6 +1297,7 @@ h5 {
 /* team section style end */
 /* testimonial style start */
 .testimonial-main-sec .carousel-item figure img {
+    max-width: 150px;
     width: 100%;
 }
 
@@ -1350,40 +1351,41 @@ h5 {
     height: 55px;
     border-radius: 100%;
     transition: .4s ease-in-out;
-    opacity: .6;
+    opacity: 0.7;
     margin: 0 4px;
     position: relative;
+    background-size: 100% !important;
 }
 
 .testimonial-inner-sec .carousel-indicators li.active {
     opacity: 1;
-    scale: 1.5;
+    scale: 1.25 !important;
     margin: 0 20px;
     background-size: cover;
 }
 
 .testimonial-inner-sec .carousel-indicators li:first-child {
-    background: url(../images/client-img2.jpg) no-repeat;
+    background: url(../images/testimonials/reviews-1.png) no-repeat;
 }
 
 .testimonial-inner-sec .carousel-indicators li:nth-child(2) {
-    background: url(../images/client-img3.jpg) no-repeat;
+    background: url(../images/testimonials/reviews-2.png) no-repeat;
 }
 
 .testimonial-inner-sec .carousel-indicators li:nth-child(3) {
-    background: url(../images/client-img1.jpg) no-repeat;
+    background: url(../images/testimonials/reviews-3.png) no-repeat;
 }
 
 .testimonial-inner-sec .carousel-indicators li:nth-child(4) {
-    background: url(../images/client-img4.jpg) no-repeat;
+    background: url(../images/testimonials/reviews-4.png) no-repeat;
 }
 
 .testimonial-inner-sec .carousel-indicators li:nth-child(5) {
-    background: url(../images/client-img5.jpg) no-repeat;
+    background: url(../images/testimonials/reviews-5.png) no-repeat;
 }
 
 .testimonial-inner-sec .carousel-indicators {
-    bottom: 93px;
+    bottom: 15% !important;
 }
 
 .customer-status {
@@ -4015,4 +4017,74 @@ h5 {
     width: 84%;
     height: 80px !important;
     left: 46px;
+}
+
+/* Modal Popup form */
+.alert {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+.modal-dialog {
+    width: 100%;
+    max-width: 1080px !important;
+    margin: 0.5% !important;
+    position: relative;
+}
+.modal-dialog img {
+    width: 100%;
+}
+.modal-header {
+    border: none;
+}
+.modal-open .modal  {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: auto 2.5%;
+}
+#submitButton {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: none;
+    background: var(--accent);
+    color: var(--primary-color);
+    transition: .4s ease-in-out;
+}
+.intl-tel-input,
+.iti {
+    width: 100%;
+}
+.iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+  right: auto;
+  left: 0% !important;
+}
+input[type="date"] {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/747/747310.png'); /* Path to your calendar icon */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px 20px;
+    -webkit-appearance: none; /* Removes the native dropdown for the date */
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0; /* Hides the default calendar icon in Chrome */
+}
+input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
 }

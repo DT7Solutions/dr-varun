@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/intlTelInput.css"/>
 </head>
 
 <body>
@@ -98,10 +99,11 @@
                             <a class="nav-link p-0" href="contact.html">Contact Us</a>
                         </li>
                     </ul>
+                    <!-- Trigger Button -->
                     <div class="header-contact d-flex align-items-center">
                         <div class="phone d-flex align-items-center">
                             <div class="banner-btns generic-btn" data-aos="fade-up" data-aos-duration="700">
-                                <a href="contact.html">Make an Appointment</a>
+                                <a href="javascript(0)" data-toggle="modal" data-target="#appointmentModal">Make an Appointment</a>
                             </div>
                         </div>
                     </div>
@@ -110,6 +112,111 @@
         </div>
     </div>    
     <!-- HEADER END -->
+
+    <!-- Appointment Modal Start -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" role="dialog" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row d-flex align-items-center m-1">
+                        <div class="col-md-5 col-12 my-1">
+                            <img src="assets/images/icons/appointment-form-img.png" alt="modal-img">
+                        </div>
+                        <div class="col-md-7 col-12 my-1">
+                            <span class="sub-txt d-block" data-aos="fade-up" data-aos-duration="700">Book With Us Now</span>
+                            <h2 data-aos="fade-up" data-aos-duration="700">Book an Appointment</h2>
+                            <p data-aos="fade-up" data-aos-duration="700">Conveniently book your appointment with our top gastrosurgeons in South India for expert care.</p>
+                            <form id="appointmentForm">
+                                <!-- Name Field -->
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                    </div>
+                                </div>
+                                <!-- Email Field -->
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <!-- Phone Number Field -->
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                </div>
+                                <!-- Service Selection Dropdown -->
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <select id="service" class="form-control" required>
+                                            <option value="" disabled selected>Choose a service</option>
+                                            <option value="Esophagus">Esophagus</option>
+                                            <option value="Stomach">Stomach</option>
+                                            <option value="Pancreas">Pancreas</option>
+                                            <option value="Liver">Liver</option>
+                                            <option value="Liver Transplantation">Liver Transplantation</option>
+                                            <option value="Biliary">Biliary</option>
+                                            <option value="Gall Bladder">Gall Bladder</option>
+                                            <option value="Spleen">Spleen</option>
+                                            <option value="Hernia">Hernia</option>
+                                            <option value="Laparoscopic Surgery">Laparoscopic Surgery</option>
+                                            <option value="Small & Large Intestine">Small & Large Intestine</option>
+                                            <option value="Rectum & Anal Canal">Rectum & Anal Canal</option>
+                                            <option value="Bariatric Surgery">Bariatric Surgery</option>
+                                            <option value="Appendix">Appendix</option>
+                                            <option value="Emergency Surgery">Emergency Surgery</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Date Input Field with Calendar Icon -->
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <input type="date" class="form-control" id="date" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Time Slot Selection Dropdown -->
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <select id="timeSlot" class="form-control" required>
+                                            <option value="" disabled selected>Select a time slot</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Submit Button -->
+                                <button type="submit" class="btn" id="submitButton">Book an Appointment</button>
+                            </form>
+                            <!-- Success and Error Messages -->
+                            <div id="formMessage" class="form-message">
+                                <div id="successMessage" class="alert alert-success text-center d-none">
+                                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="#155724"/>
+                                    </svg>
+                                    <h4>Success Booking appointment.</h4> 
+                                    <p>We received your message;<br/> we'll be in touch shortly!</p>
+                                </div>
+                                <div id="errorMessage" class="alert alert-danger text-center d-none">
+                                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 4l16 16m0-16L4 20" stroke="#721c24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <h4>Error Booking appointment.</h4> 
+                                    <p>Sorry, something went wrong.<br/> Please try again later.</p>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment Modal End -->
 
     <!-- BANNER SECTION START -->
     <section class="index3-banner-section w-100 float-left light-bg d-flex align-items-center position-relative reverse-columns">
@@ -568,79 +675,64 @@
                         <div class="carousel-item active text-center">
                             <div class="review-details-box">
                                 <figure class="d-inline-block">
-                                    <img src="assets/images/stars-img.png" alt="stars-img">
+                                    <img src="assets/images/icons/google-reviews-icon.png" alt="stars-img">
                                 </figure>
-                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
-                                    dolores
-                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
-                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
+                                <p>“Dr. Varun is an exceptional surgeon. His expertise in gastrointestinal issues is unmatched. He was very kind and explained everything clearly, making me feel confident during my treatment. Truly the best in Guntur!”</p>
                                 <div class="customer-status">
-                                    <h5>Jonathan Andrew</h5>
-                                    <span class="d-block">Happy Customer</span>
+                                    <h5>Ravi Teja</h5>
+                                    <span class="d-block">Happy Patient from Guntur</span>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item text-center">
                             <div class="review-details-box">
                                 <figure class="d-inline-block">
-                                    <img src="assets/images/stars-img.png" alt="stars-img">
+                                    <img src="assets/images/icons/google-reviews-icon.png" alt="stars-img">
                                 </figure>
-                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
-                                    dolores
-                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
-                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
+                                <p>“I traveled from Vijayawada to consult Dr. Varun, and I am so glad I did. His care and professionalism were outstanding. My surgery went smoothly, and the recovery was quicker than expected. Highly recommend him.”</p>
                                 <div class="customer-status">
-                                    <h5>Alice Waters</h5>
-                                    <span class="d-block">Happy Customer</span>
+                                    <h5>Shravani Rao</h5>
+                                    <span class="d-block">Satisfied Patient from Vijayawada</span>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item text-center">
                             <div class="review-details-box">
                                 <figure class="d-inline-block">
-                                    <img src="assets/images/stars-img.png" alt="stars-img">
+                                    <img src="assets/images/icons/google-reviews-icon.png" alt="stars-img">
                                 </figure>
-                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
-                                    dolores
-                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
-                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
+                                <p>“Dr. Varun’s calm demeanor and exceptional skills made my entire treatment journey very smooth. His staff is also very supportive. I’m thankful to have been treated by such a dedicated professional.”</p>
                                 <div class="customer-status">
-                                    <h5>Jamie Oliver</h5>
-                                    <span class="d-block">Happy Customer</span>
+                                    <h5>Venkatesh Babu</h5>
+                                    <span class="d-block">Happy Patient from Guntur</span>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item text-center">
                             <div class="review-details-box">
                                 <figure class="d-inline-block">
-                                    <img src="assets/images/stars-img.png" alt="stars-img">
+                                    <img src="assets/images/icons/google-reviews-icon.png" alt="stars-img">
                                 </figure>
-                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
-                                    dolores
-                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
-                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
+                                <p>“I was nervous about my surgery, but Dr. Varun’s expertise made all the difference. I’m fully recovered now, and I can’t thank him enough for the excellent care. He’s the best gastrosurgeon in the region.”</p>
                                 <div class="customer-status">
-                                    <h5>Clare Smyth</h5>
-                                    <span class="d-block">Happy Customer</span>
+                                    <h5>Anjali Deshmukh</h5>
+                                    <span class="d-block">Grateful Patient from Vijayawada</span>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item text-center">
                             <div class="review-details-box">
                                 <figure class="d-inline-block">
-                                    <img src="assets/images/stars-img.png" alt="stars-img">
+                                    <img src="assets/images/icons/google-reviews-icon.png" alt="stars-img">
                                 </figure>
-                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
-                                    dolores
-                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
-                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
+                                <p>“Dr. Varun provided outstanding care during my treatment. His knowledge and professionalism gave me complete confidence. I would highly recommend him to anyone looking for the best gastrointestinal surgeon in Guntur.”</p>
                                 <div class="customer-status">
-                                    <h5>Hekim Rswana</h5>
-                                    <span class="d-block">Happy Customer</span>
+                                    <h5>Nandini Reddy</h5>
+                                    <span class="d-block">Happy Patient from Guntur</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>                                        
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -961,7 +1053,9 @@
     <script src="assets/js/jquery.validate.js"></script>
     <script src="assets/js/contact-form.js"></script>
     <script src="assets/js/custom.js"></script>
-
+    <script src="assets/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 </body>
 
 </html>

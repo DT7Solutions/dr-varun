@@ -850,12 +850,12 @@ h5 {
     box-shadow: 0 0 0 1px #f3ad91;
 }
 
-.contact-con form ul {
+/* .contact-con form ul {
     display: grid;
     gap: 15px;
     margin-bottom: 30px;
     grid-template-columns: 48.5% 48.5%;
-}
+} */
 .form-box ul li input,
 .form-box ul li select,
 .form-box ul li select option{
@@ -4082,4 +4082,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="date"]:focus {
     border-color: #007bff;
     outline: none;
+}
+.form-control {
+    min-height: 35px;
+    max-height: 35px;
+    font-size: 14px;
 }

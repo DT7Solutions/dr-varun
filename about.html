@@ -131,7 +131,7 @@
                             <span class="sub-txt d-block" data-aos="fade-up" data-aos-duration="700">Book With Us Now</span>
                             <h2 data-aos="fade-up" data-aos-duration="700">Book an Appointment</h2>
                             <p data-aos="fade-up" data-aos-duration="700">Conveniently book your appointment with our top gastrosurgeons in South India for expert care.</p>
-                            <form id="appointmentForm">
+                            <form id="appointmentModalForm">
                                 <!-- Name Field -->
                                 <div class="form-group row">
                                     <div class="col-md-12">
@@ -208,7 +208,7 @@
                                     <h4>Error Booking appointment.</h4> 
                                     <p>Sorry, something went wrong.<br/> Please try again later.</p>
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -452,51 +452,84 @@
                             <img src="assets/images/about-contact-img.jpg" alt="about-contact-img">
                         </figure>
                     </div>
-                    <div class="contact-form ">
+                    <div class="appointmentForm contact-form">
                         <span class="sub-txt d-block" data-aos="fade-up" data-aos-duration="700">Book With Us Now</span>
-                        <h2 data-aos="fade-up" data-aos-duration="700">Get an Appointment</h2>
-                        <p data-aos="fade-up" data-aos-duration="700">Molestiae non recusandae itaque earum rerum
-                            sarien.</p>
-                        <form class="form-box" method="post" id="contactpage">
-                            <ul class="list-unstyled ">
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <input type="text" name="fname" id="fname" placeholder="Your Name:">
-                                    <i class="fas fa-user"></i>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <input type="email" placeholder="Email address:" name="email" id="email">
-                                    <i class="fas fa-envelope"></i>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <select name="department" id="department">
-                                        <option value="department">Choose department</option>
-                                        <option value="department1">department 1</option>
-                                        <option value="department2">department 2</option>
-                                        <option value="department3">department 3</option>
+                        <h2 data-aos="fade-up" data-aos-duration="700">Book an Appointment</h2>
+                        <p data-aos="fade-up" data-aos-duration="700">Conveniently book your appointment with our top gastrosurgeons in South India for expert care.</p>                        
+                        <form id="appointmentForm">
+                            <div class="form-group row">
+                                <!-- Name Field -->
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                </div>
+                                <!-- Email Field -->
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <!-- Phone Number Field -->
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <!-- Service Selection Dropdown -->
+                                <div class="col-md-6">
+                                    <select id="service" class="form-control" required>
+                                        <option value="" disabled selected>Choose a service</option>
+                                        <option value="Esophagus">Esophagus</option>
+                                        <option value="Stomach">Stomach</option>
+                                        <option value="Pancreas">Pancreas</option>
+                                        <option value="Liver">Liver</option>
+                                        <option value="Liver Transplantation">Liver Transplantation</option>
+                                        <option value="Biliary">Biliary</option>
+                                        <option value="Gall Bladder">Gall Bladder</option>
+                                        <option value="Spleen">Spleen</option>
+                                        <option value="Hernia">Hernia</option>
+                                        <option value="Laparoscopic Surgery">Laparoscopic Surgery</option>
+                                        <option value="Small & Large Intestine">Small & Large Intestine</option>
+                                        <option value="Rectum & Anal Canal">Rectum & Anal Canal</option>
+                                        <option value="Bariatric Surgery">Bariatric Surgery</option>
+                                        <option value="Appendix">Appendix</option>
+                                        <option value="Emergency Surgery">Emergency Surgery</option>
                                     </select>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <select name="doctor" id="doctor">
-                                        <option value="doctor">Choose doctor</option>
-                                        <option value="doctor1">doctor 1</option>
-                                        <option value="doctor2">doctor 2</option>
-                                        <option value="doctor3">doctor 3</option>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <!-- Date Input Field with Calendar Icon -->
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="date" class="form-control" id="date" required>
+                                    </div>
+                                </div>
+                                <!-- Time Slot Selection Dropdown -->
+                                <div class="col-md-6">
+                                    <select id="timeSlot" class="form-control" required>
+                                        <option value="" disabled selected>Select a time slot</option>
                                     </select>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <input placeholder="Date & Time" type="date" id="date">
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <input type="tel" name="phone" id="phone" placeholder="Phone Number">
-                                    <i class="fas fa-phone-alt"></i>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
+                            <!-- Submit Button -->
                             <div class="submit-btn" data-aos="fade-up" data-aos-duration="700">
-                                <button type="submit" id="submit">
-                                    Make an Appointment
-                                </button>
+                                <button type="submit" id="submitButton">Book an Appointment</button>
                             </div>
                         </form>
+                        <!-- Success and Error Messages -->
+                        <div id="formMessage" class="form-message">
+                            <div id="successMessage" class="alert alert-success text-center d-none">
+                                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="#155724"/>
+                                </svg>
+                                <h4>Success Booking appointment.</h4> 
+                                <p>We received your message;<br/> we'll be in touch shortly!</p>
+                            </div>
+                            <div id="errorMessage" class="alert alert-danger text-center d-none">
+                                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4l16 16m0-16L4 20" stroke="#721c24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <h4>Error Booking appointment.</h4> 
+                                <p>Sorry, something went wrong.<br/> Please try again later.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

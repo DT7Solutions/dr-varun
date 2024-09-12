@@ -31,9 +31,11 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/intlTelInput.css"/>
 </head>
 
 <body>
+
     <!-- Preloader -->
     <div class="loader-mask">
         <div class="loader">
@@ -97,10 +99,11 @@
                             <a class="nav-link p-0" href="contact.html">Contact Us</a>
                         </li>
                     </ul>
+                    <!-- Trigger Button -->
                     <div class="header-contact d-flex align-items-center">
                         <div class="phone d-flex align-items-center">
                             <div class="banner-btns generic-btn" data-aos="fade-up" data-aos-duration="700">
-                                <a href="contact.html">Make an Appointment</a>
+                                <a href="javascript(0)" data-toggle="modal" data-target="#appointmentModal">Make an Appointment</a>
                             </div>
                         </div>
                     </div>
@@ -109,6 +112,111 @@
         </div>
     </div>    
     <!-- HEADER END -->
+
+    <!-- Appointment Modal Start -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" role="dialog" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row d-flex align-items-center m-1">
+                        <div class="col-md-5 col-12 my-1">
+                            <img src="assets/images/icons/appointment-form-img.png" alt="modal-img">
+                        </div>
+                        <div class="col-md-7 col-12 my-1">
+                            <span class="sub-txt d-block" data-aos="fade-up" data-aos-duration="700">Book With Us Now</span>
+                            <h2 data-aos="fade-up" data-aos-duration="700">Book an Appointment</h2>
+                            <p data-aos="fade-up" data-aos-duration="700">Conveniently book your appointment with our top gastrosurgeons in South India for expert care.</p>
+                            <form id="appointmentForm">
+                                <!-- Name Field -->
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                    </div>
+                                </div>
+                                <!-- Email Field -->
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <!-- Phone Number Field -->
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                </div>
+                                <!-- Service Selection Dropdown -->
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <select id="service" class="form-control" required>
+                                            <option value="" disabled selected>Choose a service</option>
+                                            <option value="Esophagus">Esophagus</option>
+                                            <option value="Stomach">Stomach</option>
+                                            <option value="Pancreas">Pancreas</option>
+                                            <option value="Liver">Liver</option>
+                                            <option value="Liver Transplantation">Liver Transplantation</option>
+                                            <option value="Biliary">Biliary</option>
+                                            <option value="Gall Bladder">Gall Bladder</option>
+                                            <option value="Spleen">Spleen</option>
+                                            <option value="Hernia">Hernia</option>
+                                            <option value="Laparoscopic Surgery">Laparoscopic Surgery</option>
+                                            <option value="Small & Large Intestine">Small & Large Intestine</option>
+                                            <option value="Rectum & Anal Canal">Rectum & Anal Canal</option>
+                                            <option value="Bariatric Surgery">Bariatric Surgery</option>
+                                            <option value="Appendix">Appendix</option>
+                                            <option value="Emergency Surgery">Emergency Surgery</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Date Input Field with Calendar Icon -->
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <input type="date" class="form-control" id="date" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Time Slot Selection Dropdown -->
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <select id="timeSlot" class="form-control" required>
+                                            <option value="" disabled selected>Select a time slot</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Submit Button -->
+                                <button type="submit" class="btn" id="submitButton">Book an Appointment</button>
+                            </form>
+                            <!-- Success and Error Messages -->
+                            <div id="formMessage" class="form-message">
+                                <div id="successMessage" class="alert alert-success text-center d-none">
+                                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="#155724"/>
+                                    </svg>
+                                    <h4>Success Booking appointment.</h4> 
+                                    <p>We received your message;<br/> we'll be in touch shortly!</p>
+                                </div>
+                                <div id="errorMessage" class="alert alert-danger text-center d-none">
+                                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 4l16 16m0-16L4 20" stroke="#721c24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <h4>Error Booking appointment.</h4> 
+                                    <p>Sorry, something went wrong.<br/> Please try again later.</p>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment Modal End -->
 
     <!-- BANNER SECTION START -->
     <section class="service-banner sub-banner-section w-100 float-left d-flex align-items-center">
@@ -206,7 +314,7 @@
 
     <!-- MAP SECTION START -->
     <div class="index2-map-section w-100 float-left">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d331.28489877721745!2d144.95688568074652!3d-37.81977238709575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d52754eaecb%3A0x22f367daf52cbd47!2s21%20King%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2s!4v1696843179791!5m2!1sen!2s" width="600" height="578" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61263.80386609409!2d80.4345186!3d16.323570600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a755cb1787785%3A0x9f7999dd90f1e694!2sGuntur%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1726120473145!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!-- MAP SECTION END -->
 
@@ -341,6 +449,9 @@
     <script src="assets/js/jquery.validate.js"></script>
     <script src="assets/js/contact-form.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 
 </body>
 

@@ -2765,13 +2765,8 @@ h5 {
     text-align: center;
     border-radius: 15px;
     padding: 5%;
-    box-shadow: 6px 6px 83px 20px rgb(0 0 0 / 3%);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1), 0px 0px 5px 1px rgba(0, 0, 0, 0.05);
     background: var(--primary-color);
-    border: 0.5px solid var(--third-color);
-}
-
-.service-type-box:hover {
-    border-color: var(--button-color);
 }
 
 .service-type-box figure {

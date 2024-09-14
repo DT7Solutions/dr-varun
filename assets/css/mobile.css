@@ -581,7 +581,6 @@
     }
 
     .footer-main-section {
-        max-height: 450px;
         padding-bottom: 2.5%;
     }
 
@@ -798,7 +797,8 @@
         margin-right: 13px;
     }    
     .navbar-light .navbar-brand figure img {
-        width: 120px;
+        min-width: 150px;
+        max-height: 75px;
     }
     .header-contact .phone {
         padding-left: 15px;
@@ -1491,9 +1491,9 @@
     /*cross-button*/
     .navbar-toggler {
         right: 0px;
-        top: 10px;
+        top: 35%;
         padding: 0px;
-        width: 40px;
+        width: 50px;
         position: absolute;
     }
 
@@ -1548,7 +1548,7 @@
     .navbar-toggler-icon {
         float: left;
         width: 70%;
-        height: 2px;
+        height: 4px;
         margin: 3px 0px;
         background: #000;
     }
@@ -3076,7 +3076,7 @@
     }
 
     .index3-banner-section {
-        padding: 100px 0 0;
+        padding: 35% 0 0;
     }
 
     .index3-banner-section .banner-txt-section span {

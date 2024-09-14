@@ -7,6 +7,7 @@
     --accent: #1A374D;
     --text-color: #7a7a7a;
     --button-color: #156c5f;
+    --white-smoke-color: #f2f2f2;
 }
 
 * {
@@ -91,6 +92,10 @@ h5 {
 
 .light-bg {
     background: #fbf7f3;
+}
+
+.bg-ws {
+    background: var(--white-smoke-color);
 }
 
 /* generics end */
@@ -363,9 +368,9 @@ h5 {
 }
 
 .banner-txt-section h3 {
-    font-size: 26px;
-    line-height: 26px;
-    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
     margin-bottom: 2.5%;
 }
 
@@ -2625,8 +2630,9 @@ h5 {
     position: fixed;
     padding: 0.5% 1%;
     z-index: 1000;
-    background: linear-gradient(to right, rgba(173, 216, 230, 1) 0%, rgba(255, 239, 213, 1) 100%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    /* background: linear-gradient(to right, rgba(173, 216, 230, 1) 0%, rgba(255, 239, 213, 1) 100%); */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* index3 header styling end */
@@ -2638,11 +2644,11 @@ h5 {
 }
 
 .index3-banner-section .banner-txt-section span {
-    color: var(--accent);
+    color: var(--text-color);
 }
 
 .index3-banner-section .banner-txt-section span::before {
-    background: var(--accent);
+    background: var(--text-color);
 }
 
 .index3-banner-section .banner-txt-section h1 {
@@ -2652,6 +2658,10 @@ h5 {
     letter-spacing: 0.25px;
     word-spacing: 0.5px;
     font-weight: 600;
+}
+
+.index3-banner-section .banner-txt-section h3 {
+    color: var(--button-color);
 }
 
 .index3-banner-section .banner-txt-section p {
@@ -4010,7 +4020,7 @@ h5 {
     border-bottom: 1px solid var(--accent);
     position: absolute;
     width: 84%;
-    height: 80px !important;
+    height: 90px !important;
     left: 46px;
 }
 

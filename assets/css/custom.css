@@ -2774,7 +2774,7 @@ h5 {
     align-items: center;
     text-align: center;
     border-radius: 12px;
-    padding: 10%;
+    padding: 5% 2.5%;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1), 0px 0px 5px 1px rgba(0, 0, 0, 0.03);
     background: var(--primary-color);
 }
@@ -2808,8 +2808,9 @@ h5 {
 }
 
 .service-type-box h4 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 4px;
     margin-bottom: 4px;
     font-weight: 500;
     color: var(--accent);
@@ -4007,12 +4008,15 @@ h5 {
 }
 
 .singleblog-section .box5 .feed {
-    align-items: baseline;
-    margin-bottom: 7.5% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5% !important;
 }
 
 .singleblog-section .box5 .feed .feed-image {
-    width: 25% !important;
+    width: 40% !important;
 }
 
 .singleblog-section .box5 .feed:after {
@@ -4020,7 +4024,7 @@ h5 {
     border-bottom: 1px solid var(--accent);
     position: absolute;
     width: 84%;
-    height: 90px !important;
+    height: 100px !important;
     left: 46px;
 }
 

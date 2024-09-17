@@ -1107,8 +1107,8 @@ a.item-link{margin-top: 10px; display: inline-block}
     line-height: 26px;
     font-weight: 400;
     text-decoration: none;
-    width: 66%;
-    padding: 8px 0 0 16px;
+    width: 75%;
+    padding: 1% 2.5%;
     transition: all 0.3s ease-in-out;
     position: relative;
     z-index: 1;

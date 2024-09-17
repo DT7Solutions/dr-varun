@@ -234,50 +234,73 @@
     </section>          
     <!-- BANNER SECTION END -->
 
-    <!-- ABOUT SECTION START -->
+    <!-- ABOUT SECTION START --> 
     <section class="index3-about-section w-100 float-left padding-top padding-bottom position-relative bg-ws">
         <div class="container">
             <div class="about-inner-con">
                 <div class="about-img-con">
                     <figure class="mb-0" data-aos="fade-up" data-aos-duration="700">
-                        <img src="assets/images/about/dr-varun-about-us-img.png" alt="Dr. Varun - Gastroenterology Care">
+                        <img src="assets/images/about/dr-varun-about-us-img.png" alt="Dr. Varun - Gastroenterology Care" class="img-fluid rounded shadow-lg">
                     </figure>
                 </div>
                 <div class="about-txt-con">
-                    <div class="generic-title">
-                        <span class="small-text" data-aos="fade-up" data-aos-duration="700">About Us</span>
-                        <h2 class="mb-0" data-aos="fade-up" data-aos-duration="700">Top-Rated Gastroenterology Care in Guntur</h2>
+                    <!-- Title -->
+                    <div class="generic-title text-center text-md-left">
+                        <span class="small-text aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">About Us</span>
+                        <h2 class="mb-0 aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">Expert Gastroenterology Care in Guntur</h2>
                     </div>
-                    <p data-aos="fade-up" data-aos-duration="700">Dr. Varun provides leading gastroenterology care in Guntur, specializing in advanced diagnostics and personalized treatments. Our clinic is dedicated to ensuring high-quality, patient-centered healthcare for all.</p>
-                    <p data-aos="fade-up" data-aos-duration="700">With years of experience, we ensure top-notch gastrointestinal treatments that improve the well-being of our patients.</p>
-                    <ul class="list-unstyled" data-aos="fade-up" data-aos-duration="700">
-                        <li>Patient-Centered Care</li>
-                        <li>State-of-the-Art Facilities</li>
-                        <li>Personalized Treatment</li>
-                        <li>Latest Diagnostic Techniques</li>
-                        <li>Expert Surgical Solutions</li>
-                        <li>Patient-Focused Healthcare</li>
-                    </ul>
-                    <div class="generic-btn" data-aos="fade-up" data-aos-duration="700">
-                        <a href="about.html">Learn More About Us</a>
+
+                    <!-- Nav Pills for Tabs -->
+                    <div class="nav nav-pills nav-justified mb-4 mt-4" id="myTab" role="tablist">
+                        <a class="nav-link active" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="about" aria-selected="true">About</a>
+                        <a class="nav-link" id="experience-tab" data-toggle="pill" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
+                        <a class="nav-link" id="specialities-tab" data-toggle="pill" href="#specialities" role="tab" aria-controls="specialities" aria-selected="false">Specialities</a>
                     </div>
-                </div>
-            </div>
-            <div class="about-video-box">
-                <div class="btn-outer">
-                    <a href="javascript:void(0)" onclick="lightbox_open();">
-                        <div class="video-wrap">
-                            <img src="assets/images/video-play-icon.png" alt="Watch our introduction video">
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        <!-- About Tab Content -->
+                        <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                            <p data-aos="fade-up" data-aos-duration="700">
+                                Dr. Varun Palanati is a leading gastroenterologist and gastrointestinal surgeon in Guntur, offering specialized care for a wide range of gastrointestinal disorders. His expertise in colorectal surgery and advanced gastroenterology makes him a trusted name in the region.
+                            </p>
+                            <ul class="list-unstyled pl-3" data-aos="fade-up" data-aos-duration="700">
+                                <li>Over 10 years of surgical experience</li>
+                                <li>Expert in laparoscopic and diagnostic surgeries</li>
+                                <li>Leading care provider at Shri Hospital, Guntur</li>
+                            </ul>
                         </div>
-                    </a>
+
+                        <!-- Experience Tab Content -->
+                        <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                            <p data-aos="fade-up" data-aos-duration="700">
+                                Dr. Varun's career includes valuable experience at Yashoda Hospitals, where he worked as an Associate Consultant. He has performed numerous complex surgeries, including liver resections and colorectal cancer treatments.
+                            </p>
+                            <ul class="list-unstyled pl-3" data-aos="fade-up" data-aos-duration="700">
+                                <li>Former Associate Consultant at Yashoda Hospitals</li>
+                                <li>Extensive expertise in liver and GI surgery</li>
+                                <li>Active participant in medical conferences and research</li>
+                            </ul>
+                        </div>
+
+                        <!-- Specialities Tab Content -->
+                        <div class="tab-pane fade" id="specialities" role="tabpanel" aria-labelledby="specialities-tab">
+                            <p data-aos="fade-up" data-aos-duration="700">
+                                Dr. Varun specializes in treating liver, gallbladder, pancreas, and colorectal conditions with minimally invasive surgeries for faster recovery. His holistic approach ensures personalized care for each patient.
+                            </p>
+                            <ul class="list-unstyled pl-3" data-aos="fade-up" data-aos-duration="700">
+                                <li>Liver, gallbladder, and pancreatic diseases</li>
+                                <li>Colorectal conditions, including cancer</li>
+                                <li>Minimally invasive laparoscopic surgeries</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Learn More Button -->
+                    <div class="generic-btn mt-4" data-aos="fade-up" data-aos-duration="700">
+                        <a href="about.html" class="btn btn-primary btn-lg">Learn More About Us</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="light">
-            <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-            <iframe src="https://www.youtube.com/embed/VV7Ztzqy28U?si=tWtn-3OSgbDRbciu" allowfullscreen></iframe>
-        </div>
-        <div id="fade1" onClick="lightbox_close();"></div>
     </section>  
     <!-- ABOUT SECTION END -->
 
@@ -738,92 +761,42 @@
     </section>
     <!-- TESTIMONIAL SECTION END -->
      
-    <!-- PROFESSIONAL TEAM SECTION START -->
-    <section class="professional-team-section w-100 float-left padding-top padding-bottom light-bg">
+    <!-- WORKING AREA SECTION START -->
+    <section class="working-area-section w-100 float-left padding-top padding-bottom bg-light">
         <div class="container">
-            <div class="generic-title text-center">
-                <span class="small-text" data-aos="fade-up" data-aos-duration="700">Professional Team</span>
-                <h2 data-aos="fade-up" data-aos-duration="700">Meet Our Experience Doctors</h2>
+            <div class="generic-title text-center mb-4">
+                <span class="small-text d-block mb-2" data-aos="fade-up" data-aos-duration="700">Our Prestigious Associations</span>
+                <h2 data-aos="fade-up" data-aos-duration="700">Expert Gastrointestinal Care Locations</h2>
             </div>
-            <div class="doctor-slides" data-aos="fade-up" data-aos-duration="700">
-                <div id="owl-carouselone" class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="doctor-detail text-center">
-                            <figure>
-                                <img src="assets/images/doctor-img1.jpg" alt="doctor-img1">
+            <div class="working-area my-2">
+                <div class="row">
+                    <div class="item col-md-6 mb-4">
+                        <div class="working-img-con">
+                            <figure class="mb-0" data-aos="fade-up" data-aos-duration="700">
+                                <img src="assets/images/about/shri-hospital-guntur.png" alt="Shri Hospital" class="img-fluid rounded shadow-lg">
                             </figure>
-                            <h4>Alice Waters</h4>
-                            <span class="d-block">Gynecologist</span>
-                            <div class="social-links">
-                                <ul class="list-unstyled mb-0 d-flex justify-content-center">
-                                    <li>
-                                        <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
-                                                class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li class="mb-0">
-                                        <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
+                        </div>
+                        <div class="working-detail">
+                            <h4 class="font-weight-bold">Shri Hospital</h4>
+                            <span class="d-block">Guntur</span>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="doctor-detail text-center">
-                            <figure>
-                                <img src="assets/images/doctor-img2.jpg" alt="doctor-img2">
+                    <div class="item col-md-6 mb-4">
+                        <div class="working-img-con">
+                            <figure class="mb-0" data-aos="fade-up" data-aos-duration="700">
+                                <img src="assets/images/about/janardani-hospital-guntur.png" alt="Janardani Hospital" class="img-fluid rounded shadow-lg">
                             </figure>
-                            <h4>Bobby Flay</h4>
-                            <span class="d-block">Internist</span>
-                            <div class="social-links">
-                                <ul class="list-unstyled mb-0 d-flex justify-content-center">
-                                    <li>
-                                        <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
-                                                class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li class="mb-0">
-                                        <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="doctor-detail text-center">
-                            <figure>
-                                <img src="assets/images/doctor-img3.jpg" alt="doctor-img3">
-                            </figure>
-                            <h4>Jamie Oliver</h4>
-                            <span class="d-block">Surgeon</span>
-                            <div class="social-links">
-                                <ul class="list-unstyled mb-0 d-flex justify-content-center">
-                                    <li>
-                                        <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
-                                                class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li class="mb-0">
-                                        <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="working-detail">
+                            <h4 class="font-weight-bold">Janardani Hospital</h4>
+                            <span class="d-block">Guntur</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- PROFESSIONAL TEAM SECTION END -->
+    </section>       
+    <!-- WORKING AREA SECTION END -->
 
     <!-- BLOG SECTION START -->
     <section class="index3-blogs-section blogs-section w-100 float-left padding-top padding-bottom">

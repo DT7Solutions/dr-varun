@@ -94,6 +94,10 @@ h5 {
     background: #fbf7f3;
 }
 
+.bg-w {
+    background: #ffffff;
+}
+
 .bg-ws {
     background: var(--white-smoke-color);
 }
@@ -528,8 +532,8 @@ h5 {
 .about-txt-con ul {
     display: grid;
     gap: 10px;
-    grid-template-columns: 48% 48%;
-    margin-bottom: 37px;
+    grid-template-columns: 100%;
+    margin-bottom: 2.5%;
 }
 
 .about-txt-con ul li {
@@ -551,6 +555,16 @@ h5 {
 
 .about-txt-con .generic-title {
     margin-bottom: 14px;
+}
+
+.about-txt-con .nav-pills .nav-link.active, 
+.about-txt-con .nav-pills .show>.nav-link {
+    color: var(--primary-color);
+    background-color: var(--accent);
+}
+
+.nav-pills .nav-link { 
+    color: var(--accent);
 }
 
 .about-video-box {
@@ -2872,8 +2886,8 @@ h5 {
 }
 
 .index3-about-section .about-txt-con p {
-    margin-bottom: 64px;
-    padding-right: 10px;
+    margin-bottom: 2.5% !important;
+    text-align: justify;
 }
 
 /* index3 about styling end */
@@ -3409,8 +3423,8 @@ h5 {
 
 .about-special-txt {
     position: absolute;
-    left: -85px;
-    bottom: 70px;
+    left: 5%;
+    bottom: 17.5%;
     width: 291px;
     color: var(--primary-color);
     background: var(--accent);
@@ -4104,5 +4118,25 @@ input[type="date"]:focus {
 }
 
 
+/* Working Area Section*/
+.working-area-section .working-area .working-detail {
+    padding: 5% 2.5%;
+    text-align: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1), 0px 0px 5px 1px rgba(0, 0, 0, 0.03);
+    background: var(--primary-color);
+}
+.working-area-section .working-area .working-detail h4{
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--accent);
+}
+.working-area-section .working-area .working-detail span{
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--button-color);
+}
 /* Section BG Stylying */
 

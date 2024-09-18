@@ -2474,7 +2474,7 @@ h5 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -10%;
+    bottom: -5%;
 }
 
 .patient-reviews-sec .owl-carousel .owl-dots button.active span {
@@ -2591,11 +2591,11 @@ h5 {
 }
 
 .blogpage-section {
-    padding: 5% 0% 7.5%!important;
+    padding: 5% 0% 7.5% !important;
 }
 
 .singleblog-section .main-box {
-    padding: 2.5% 2.5% 7.5%!important;
+    padding: 2.5% !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -2617,11 +2617,11 @@ h5 {
     margin-bottom: 20px !important;
 }
 .singleblog-section .main-box .content-info {
-    margin: 2.5% 0%;
+    margin: 2.5% 1%;
 }
 .singleblog-section .main-box h5 {
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 22px;
     font-weight: 400;
     color: var(--button-color);
 }
@@ -3532,7 +3532,6 @@ h5 {
     background-size: cover;
     height: 320px !important;
     margin-top: 7.5%;
-    margin-bottom: 2.5%;
 }
 
 /* service page styling end */
@@ -4088,16 +4087,16 @@ h5 {
 }
 
 .singleblog-section .box5 .feed .feed-image {
-    width: 40% !important;
+    width: 50% !important;
 }
 
 .singleblog-section .box5 .feed:after {
     content: "";
     border-bottom: 1px solid var(--accent);
     position: absolute;
-    width: 84%;
-    height: 100px !important;
-    left: 46px;
+    width: 90%;
+    height: 105px !important;
+    left: 7.5% !important;
 }
 
 /* Modal Popup form */

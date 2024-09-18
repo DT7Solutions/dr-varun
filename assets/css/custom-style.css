@@ -1038,22 +1038,19 @@ a.item-link{margin-top: 10px; display: inline-block}
     display: contents;
 }
 .singleblog-section .box4 .tag .button{
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 18px;
     font-weight: 400;
     background: var(--accent);
     color: #ffffff;
     border-radius: 8px;
-    padding: 15px 18px;
+    padding: 10px 14px;
     display: inline-block;
     text-align: center;
     transition: all 0.3s ease-in-out;
     margin-bottom: 4px;
     letter-spacing: 0.6px;
 	border: 1px solid transparent;
-}
-.singleblog-section .box4 .tag .button2{
-    padding: 15px 24px;
 }
 .singleblog-section .box4 .tag .button:focus{
 	outline: none;

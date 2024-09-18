@@ -1656,7 +1656,7 @@ a.item-link{margin-top: 10px; display: inline-block}
 .blogpage-section .blog-box .lower-portion h5 {font-size: 16px; line-height: 24px;}
 .blogpage-section .blog-box .button-portion .read_more {font-size: 12px; line-height: 20px; padding: 8px 14px 8px 20px;}
 /* Single Blog */
-.singleblog-section {padding: 60px 0 120px;}
+.singleblog-section {padding: 5% 0% 25% !important;}
 .singleblog-section .main-box {padding: 10px 15px 30px 10px; margin-bottom: 25px;}
 .singleblog-section .main-box .image1 {margin-bottom: 20px;}
 .singleblog-section .main-box .content1 h4 {margin-bottom: 10px;}
@@ -1802,11 +1802,11 @@ a.item-link{margin-top: 10px; display: inline-block}
 	.singleblog-section .content7 textarea {padding: 10px; height: 100px;}
 	.singleblog-section .content7 input {padding: 8px 10px;}
 	.singleblog-section .content7 .post_comment {padding: 12px 15px;}
-	.singleblog-section .box1 {margin-bottom: 20px;}
+	.singleblog-section .box1 {margin-bottom: 5% !important;}
 	.singleblog-section .box1 h5:after {width: 82%;}
 	.singleblog-section .box4 ul {padding: 0;}
-	.singleblog-section .box5 .feed:after {width: 84%;}
-	.singleblog-section .box5 .feed .feed-image {width: 25%;}
+	.singleblog-section .box5 .feed:after {width: 90%; height: 70px !important;}
+	.singleblog-section .box5 .feed .feed-image {width: 25% !important;}
 	.singleblog-section .box5 .feed a {padding: 9px 0 0 12px;}
 	/* Blog pages */
 	.blog-posts .blog-box .loadone_twocol .date {width: 48.5%;}

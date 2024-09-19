@@ -2521,6 +2521,7 @@ h5 {
 }
 
 .blog-txt-con h4 {
+    min-height: 75px;
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 5px;
@@ -2531,8 +2532,8 @@ h5 {
     line-height: 34px;
     color: var(--primary-color);
     font-weight: 800;
-    width: 100px;
-    height: 100px;
+    width: 100px !important;
+    height: 100px !important;
     background: var(--accent);
     border-radius: 100%;
     position: absolute;
@@ -3535,7 +3536,7 @@ h5 {
 .service-banner {
     background: url(../images/bg/service-banner.png) no-repeat center;
     background-size: cover;
-    height: 320px !important;
+    max-height: 280px !important;
     margin-top: 7.5%;
 }
 
@@ -4181,6 +4182,11 @@ input[type="date"]:focus {
 
 
 /* Working Area Section*/
+.working-area-section .working-area img {
+    border-radius: 0% !important;
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+}
 .working-area-section .working-area .working-detail {
     padding: 5% 2.5%;
     text-align: center;
@@ -4190,14 +4196,10 @@ input[type="date"]:focus {
     background: var(--primary-color);
 }
 .working-area-section .working-area .working-detail h4{
-    font-size: 28px;
-    line-height: 32px;
     font-weight: 600;
     color: var(--accent);
 }
 .working-area-section .working-area .working-detail span{
-    font-size: 18px;
-    line-height: 20px;
     color: var(--button-color);
 }
 /* Section BG Stylying */

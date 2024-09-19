@@ -1550,7 +1550,7 @@ a.item-link{margin-top: 10px; display: inline-block}
 	}
 	
 /* Blog */
-.blogpage-section {padding: 65px 0 130px;}
+.blogpage-section {padding: 15% 5% !important;}
 .blogpage-section .blog_content h2 {margin-bottom: 30px;}
 .blogpage-section .blog-box {margin-bottom: 20px;}
 .blogpage-section .blog-box .lower-portion {padding: 15px 20px;}

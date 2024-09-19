@@ -1386,7 +1386,7 @@
     /* index3 page responsive end */
     /* about us page responsive start */
     .sub-banner-inner-con {
-        margin-top: 20%;
+        margin-top: 10%;
     }
     .sub-banner-inner-con h1 {
         margin-bottom: 5px;
@@ -2442,9 +2442,14 @@
         border: none;
         padding-bottom: 0;
     }
+    
+    .sub-banner-inner-con {
+        margin-top: 10%;
+    } 
 
     .sub-banner-section {
-        height: 420px;
+        min-height: 320px !important;
+        background-position: left center;
     }
 
     .sub-banner-inner-con .breadcrumb {
@@ -3230,8 +3235,12 @@
         display: none;
     }
 
+    .sub-banner-inner-con {
+        margin-top: 20%;
+    } 
+
     .sub-banner-section {
-        height: 370px;
+        min-height: 420px !important;
         background-position: left center;
     }
 

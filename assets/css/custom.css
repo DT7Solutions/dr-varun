@@ -69,6 +69,11 @@ h5 {
     display: block;
 }
 
+.link-text-color {
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 16px;
+}
 .generic-btn a {
     font-size: 14px;
     font-weight: 500;

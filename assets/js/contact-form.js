@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function submitForm(formId) {
         const form = document.getElementById(formId);
-        if (!form) return; // Skip if the form does not exist on the current page
         
         const dateInput = form.querySelector('#date');
         const timeSlotSelect = form.querySelector('#timeSlot');
@@ -214,11 +213,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Initialize the form handling for both modal and normal forms
-    document.querySelectorAll('.appointmentForm, .appointmentModalForm').forEach(formElement => {
-        formElement.querySelector('button[type="submit"]').addEventListener('click', function (event) {
-            const formId = formElement.getAttribute('id');
-            submitForm(formId);
-        });
-    });
+    submitForm('appointmentForm'); // For normal form
+    submitForm('appointmentModalForm'); // For modal form
 });

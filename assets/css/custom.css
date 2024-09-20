@@ -4221,5 +4221,51 @@ input[type="date"]:focus {
 .working-area-section .working-area .working-detail span{
     color: var(--button-color);
 }
+
+/* About Detailed Section */
+.about-details-main-section .publications,
+.about-details-main-section .abstracts {
+    text-align: center;
+    padding: 5%;
+}
+.about-details-main-section .publications .item,
+.about-details-main-section .abstracts .item{
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1% 1.5% 2.5%;
+}
+.about-details-main-section .publications img,
+.about-details-main-section .abstracts img {
+    border: 2px solid var(--accent);
+    margin: 1%;
+    max-height: 300px;
+}
+.about-details-main-section .publications h6 {
+    color: var(--accent);
+    min-height: 20%;
+}
+.about-details-main-section .abstracts h6 {
+    color: var(--accent);
+    min-height: 30%;
+}
+.about-details-main-section .publications .links,
+.about-details-main-section .abstracts .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-details-main-section .publications .links a,
+.about-details-main-section .abstracts .links a {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--button-color);
+    text-decoration: none;
+}
+.about-details-main-section .publications .links a:hover,
+.about-details-main-section .abstracts .links a:hover {
+    color: var(--button-color);
+}
+
+
 /* Section BG Stylying */
 

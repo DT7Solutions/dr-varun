@@ -1457,7 +1457,7 @@ a.item-link{margin-top: 10px; display: inline-block}
 .blogpage-section .blog-box .lower-portion h5 {font-size: 18px; line-height: 26px; letter-spacing: 0; word-spacing: 0;}
 .blogpage-section .blog-box .button-portion .read_more {padding: 12px 20px;}
 /* Single Blog */
-.singleblog-section {padding: 100px 0 180px;}
+.singleblog-section {padding: 15% 5% !important;}
 .singleblog-section .main-box {padding: 10px 15px 35px 10px;}
 .singleblog-section .main-box .content1 h4 {margin-bottom: 15px;}
 .singleblog-section .main-box .content1 i {margin-bottom: 22px;}
@@ -1550,7 +1550,7 @@ a.item-link{margin-top: 10px; display: inline-block}
 	}
 	
 /* Blog */
-.blogpage-section {padding: 15% 5% !important;}
+.blogpage-section {padding: 7.5% 5% !important;}
 .blogpage-section .blog_content h2 {margin-bottom: 30px;}
 .blogpage-section .blog-box {margin-bottom: 20px;}
 .blogpage-section .blog-box .lower-portion {padding: 15px 20px;}
@@ -1604,10 +1604,10 @@ a.item-link{margin-top: 10px; display: inline-block}
 .singleblog-section .box4 ul{ padding: 2.5% 1% !important;}
 .singleblog-section .box4 .tag .button {padding: 10px 14px; margin-bottom: 10px; font-size: 14px; line-height: 24px;}
 .singleblog-section .box5 .feed {margin-bottom: 40px;}
-.singleblog-section .box5 .feed:after {width: 91%; height: 88px;}
+.singleblog-section .box5 .feed:after {width: 80%; height: 125px !important;}
 .singleblog-section .box5 .feed .feed-image {width: 12%;}
-.singleblog-section .box5 .feed .feed-image img {width: 80px;}
-.singleblog-section .box5 .feed a {font-size: 14px; line-height: 22px; padding: 14px 200px 0 20px;}
+.singleblog-section .box5 .feed .feed-image img {width: auto;}
+.singleblog-section .box5 .feed a {font-size: 14px; line-height: 22px; padding: 0px; margin-left: -15%;}
 /* Blog pages */
 .blog-posts p {font-size: 16px; line-height: 24px;}
 .blog-posts .blog-box .loadone_twocol .date {width: 50%;}
@@ -1697,7 +1697,7 @@ a.item-link{margin-top: 10px; display: inline-block}
 .singleblog-section .box5 .feed {margin-bottom: 35px;}
 .singleblog-section .box5 .feed:after {width: 89%; height: 80px;}
 .singleblog-section .box5 .feed .feed-image {width: 15%;}
-.singleblog-section .box5 .feed a {padding: 9px 90px 0 12px;}
+.singleblog-section .box5 .feed a {padding: 9px 90px 0 12px; margin-left: 0%}
 /* Blog pages */
 .blog-posts .blog-box .loadone_twocol .date {width: 49.5%;}
 .blog-posts .blog-box .loadone_twocol .button {width: 49.5%;}

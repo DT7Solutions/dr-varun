@@ -244,7 +244,7 @@
     }
 
     .padding-bottom {
-        padding-bottom: 7.5% !important;
+        padding-bottom: 7.5%;
     }
 
     h2 {
@@ -712,7 +712,7 @@
     }
 
     .index3-about-section .about-img-con {
-        width: 100%;
+        width: 100% !important;
         height: fit-content;
     }
 
@@ -1190,13 +1190,18 @@
     }
 
     .index3-banner-section .banner-inner-con {
-        gap: 30px;
-        grid-template-columns: 53% 45%;
+        gap: 20px;
+        grid-template-columns: 100%;
+        text-align: center;
     }
 
     .banner-txt-section span {
         padding-left: 45px;
         margin-bottom: 10px;
+    }
+
+    .banner-txt-section span::before {
+        left: 30%;
     }
 
     .index3-banner-section .banner-txt-section span::before {
@@ -1635,7 +1640,7 @@
     }
 
     .index2-header-con {
-        padding: 15px 0;
+        padding: 0.5% 0 !important;
         position: fixed;
     }
 
@@ -1688,6 +1693,10 @@
         line-height: 14px;
         padding: 18px 18px;
     }
+
+    .index3-banner-section .banner-btns a {
+        margin: 2.5% 1% 0%;
+    }    
 
     .banner-btns.generic-btn a:last-child {
         padding: 18px 30px;
@@ -1882,8 +1891,8 @@
     }
 
     .process-inner-con {
-        gap: 30px;
-        grid-template-columns: 44% 52%;
+        gap: 20px;
+        grid-template-columns: 100%;
     }
 
     .process-text-con h3 {
@@ -2001,8 +2010,10 @@
     }
 
     .footer-inner-sec {
-        gap: 25px;
-        grid-template-columns: 27% 13.3% 26.6% 22%;
+        gap: 20px;
+        grid-template-columns: 100%;
+        margin: 2.5%;
+        margin-top: -5%;
     }
 
     .footer-main-section::after {
@@ -2315,7 +2326,8 @@
     }
 
     .index3-about-section .about-inner-con {
-        grid-template-columns: 45% 50%;
+        gap: 20px;
+        grid-template-columns: 100%;
     }
 
     .index3-about-section .about-txt-con p {
@@ -2377,8 +2389,8 @@
     }
 
     .index3-contact-con .contact-inner-con {
-        grid-template-columns: 47% 49%;
-        gap: 25px;
+        gap: 20px;
+        grid-template-columns: 100%;
     }
 
     .form-box ul li input,
@@ -2467,6 +2479,7 @@
     }
 
     .about-special-txt {
+        display: none;
         left: -10px;
         bottom: 60px;
     }
@@ -2477,7 +2490,11 @@
 
     .about-contact-con.index3-contact-con .contact-inner-con {
         gap: 20px;
-        grid-template-columns: 48% 49.6%;
+        grid-template-columns: 100%;
+    }
+
+    .about-contact-con.index3-contact-con .contact-inner-con .contact-image-con {
+        display: none;
     }
 
     .contact-con form ul {
@@ -3337,6 +3354,7 @@
 
     .banner-txt-section span::before {
         width: 30px;
+        left: 0%;
     }
 
     .banner-txt-section h1 {

@@ -244,7 +244,7 @@
     }
 
     .padding-bottom {
-        padding-bottom: 5%;
+        padding-bottom: 7.5% !important;
     }
 
     h2 {
@@ -1636,7 +1636,7 @@
 
     .index2-header-con {
         padding: 15px 0;
-        position: absolute;
+        position: fixed;
     }
 
     .cart-box {
@@ -2197,7 +2197,7 @@
     }
 
     .patient-reviews-sec {
-        padding-bottom: 140px;
+        padding-bottom: 5% !important;
     }
 
     .index2-blog-inner-con {
@@ -2447,9 +2447,14 @@
         margin-top: 10%;
     } 
 
+    .service-banner {
+        min-height: 320px !important;
+        background-position: left center !important;
+    }
+
     .sub-banner-section {
         min-height: 320px !important;
-        background-position: left center;
+        background-position: center;
     }
 
     .sub-banner-inner-con .breadcrumb {
@@ -2512,7 +2517,7 @@
     }
 
     .contact-detail {
-        padding: 31px 30px;
+        padding: 7.5% 2.5% !important;
         margin-bottom: 25px;
     }
 

@@ -3427,7 +3427,7 @@ h5 {
     background-size: cover;
     width: 100%;
     max-height: 280px !important;
-    margin-top: 7.5%;
+    margin-top: 5%;
 }
 
 .sub-banner-inner-con h1,
@@ -3549,7 +3549,7 @@ h5 {
     background: url(../images/bg/service-banner.png) no-repeat center;
     background-size: cover;
     max-height: 280px !important;
-    margin-top: 7.5%;
+    margin-top: 5%;
 }
 
 /* service page styling end */

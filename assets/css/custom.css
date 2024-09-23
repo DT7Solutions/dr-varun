@@ -371,8 +371,8 @@ h5 {
 }
 
 .banner-txt-section p {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 26px;
     font-weight: 400;
     margin-bottom: 2.5%;
 }
@@ -836,8 +836,8 @@ h5 {
 }
 
 .contact-form p {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 26px;
     margin-bottom: 33px;
 }
 
@@ -1338,8 +1338,8 @@ h5 {
 
 .testimonial-main-sec .carousel-item p {
     color: var(--secondary-color);
-    font-size: 20px;
-    line-height: 33px;
+    font-size: 16px;
+    line-height: 28px;
     font-weight: 400;
     margin-bottom: 0;
 }
@@ -4241,62 +4241,25 @@ input[type="date"]:focus {
 }
 
 /* About Detailed Section */
-.about-details-main-section .publications,
-.about-details-main-section .abstracts {
-    text-align: center;
-    padding: 1%;
+.index3-about-section .about-txt-con p {
+    font-size: 14px !important;
 }
-.about-details-main-section .publications .item-box,
-.about-details-main-section .abstracts .item-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.about-details-main-section .publications .item,
-.about-details-main-section .abstracts .item{
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1% 0.5% 2.5%;
-    max-width: 325px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.about-details-main-section .publications img,
-.about-details-main-section .abstracts img {
-    border: 1px solid var(--accent);
-}
-.about-details-main-section .publications h6 {
-    color: var(--accent);
-    min-height: 20%;
-    margin: 2.5% 0%;
-}
-.about-details-main-section .abstracts h6 {
-    color: var(--accent);
-    min-height: 25%;
-    margin: 2.5% 0%;
-}
-.about-details-main-section .publications .links,
-.about-details-main-section .abstracts .links {
-    position: relative;
-    bottom: 0%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0% 2.5%;
-}
-.about-details-main-section .publications .links a,
-.about-details-main-section .abstracts .links a {
+.about-details-main-section .bio-info .links a {
     font-size: 14px;
     line-height: 20px;
     color: var(--button-color);
     text-decoration: none;
+    margin-left: 5%;
 }
-.about-details-main-section .publications .links a:hover,
-.about-details-main-section .abstracts .links a:hover {
+.about-details-main-section .bio-info .links i {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0.5%;
     color: var(--button-color);
 }
-
+.about-details-main-section .bio-info .links a:hover {
+    color: var(--button-color);
+}
 .about-details-main-section h2 {
     font-size: 22px;
     line-height: 28px;
@@ -4309,15 +4272,8 @@ input[type="date"]:focus {
     line-height: 20px;
     margin-left: 2.5%;
 }
-.about-details-main-section .bio-info .Info,
-.about-details-main-section .bio-info .links {
+.about-details-main-section .bio-info .Info {
     margin-left: 5%;
-}
-.about-details-main-section .bio-info .links i {
-    font-size: 12px;
-    line-height: 18px;
-    margin: 0.5%;
-    color: var(--button-color);
 }
 .about-details-main-section .bio-info i {
     font-size: 20px;

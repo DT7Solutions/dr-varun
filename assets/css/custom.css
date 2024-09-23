@@ -1165,8 +1165,8 @@ h5 {
 /* process section style start */
 .process-inner-con {
     display: grid;
-    gap: 64px;
-    grid-template-columns: 51.5% 44%;
+    gap: 30px;
+    grid-template-columns: 50.5% 45%;
 }
 
 .process-left-sec figure {
@@ -1244,6 +1244,12 @@ h5 {
 .process-right-sec .generic-title {
     margin-top: -10px;
     margin-bottom: 35px;
+}
+
+.process-right-sec .generic-title .designations{
+    font-size: 14px;
+    text-align: end;
+    color: var(--button-color);
 }
 
 /* process section style end */
@@ -3422,8 +3428,16 @@ h5 {
 /* index3 page styling end */
 /* about us page styling start */
 /* about us banner styling */
+.blogs-bg {
+    background: url(../images/bg/blogs-banner-img.png) no-repeat center !important;
+    background-size: cover;
+}
+.contact-bg {
+    background: url(../images/bg/contact-banner-img.png) no-repeat center !important;
+    background-size: cover;
+}
 .sub-banner-section {
-    background: url(../images/about-banner-img.jpg) no-repeat center;
+    background: url(../images/bg/about-banner-img.png) no-repeat center;
     background-size: cover;
     width: 100%;
     max-height: 280px !important;
@@ -3437,15 +3451,17 @@ h5 {
 }
 
 .sub-banner-inner-con h1 {
-    font-size: 44px;
-    line-height: 48px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 2.5%;
 }
 
 .sub-banner-inner-con p {
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 15px;
+    margin: 2.5% auto;
+    max-width: 750px;
+    text-align: center;
 }
 
 .sub-banner-inner-con .breadcrumb .active {
@@ -3498,7 +3514,7 @@ h5 {
 
 .about-special-txt {
     position: absolute;
-    left: 5%;
+    left: 10%;
     bottom: 17.5%;
     width: 291px;
     color: var(--primary-color);
@@ -4228,7 +4244,7 @@ input[type="date"]:focus {
 .about-details-main-section .publications,
 .about-details-main-section .abstracts {
     text-align: center;
-    padding: 5%;
+    padding: 1%;
 }
 .about-details-main-section .publications .item-box,
 .about-details-main-section .abstracts .item-box {
@@ -4242,6 +4258,9 @@ input[type="date"]:focus {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1% 0.5% 2.5%;
     max-width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .about-details-main-section .publications img,
 .about-details-main-section .abstracts img {
@@ -4259,9 +4278,12 @@ input[type="date"]:focus {
 }
 .about-details-main-section .publications .links,
 .about-details-main-section .abstracts .links {
+    position: relative;
+    bottom: 0%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0% 2.5%;
 }
 .about-details-main-section .publications .links a,
 .about-details-main-section .abstracts .links a {
@@ -4275,6 +4297,34 @@ input[type="date"]:focus {
     color: var(--button-color);
 }
 
-
-/* Section BG Stylying */
-
+.about-details-main-section h2 {
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--accent) !important;
+    font-weight: 500;
+    margin: 1.5% 0% 0.5%;
+}
+.about-details-main-section .bio-info {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 2.5%;
+}
+.about-details-main-section .bio-info .Info,
+.about-details-main-section .bio-info .links {
+    margin-left: 5%;
+}
+.about-details-main-section .bio-info .links i {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0.5%;
+    color: var(--button-color);
+}
+.about-details-main-section .bio-info i {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0.5%;
+    color: var(--button-color);
+}
+.about-details-main-section .bio-info strong {
+    color: var(--accent);
+}

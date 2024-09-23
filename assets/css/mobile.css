@@ -300,8 +300,8 @@
 
     .process-inner-con {
         display: grid;
-        gap: 60px;
-        grid-template-columns: 44.5% 50%;
+        gap: 30px;
+        grid-template-columns: 50.5% 45%;
     }
 
     .testimonial-inner-sec .carousel-inner {
@@ -3263,7 +3263,7 @@
 
     .sub-banner-section {
         min-height: 420px !important;
-        background-position: left center;
+        background-position: left center !important;
     }
 
     .about-special-txt {

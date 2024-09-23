@@ -1092,7 +1092,7 @@ h5 {
 /* project section style end */
 /* counter section style start */
 .counter-section {
-    background: url(../images/counter-sec-bg-img.jpg) no-repeat center;
+    background: url(../images/bg/counter-sec-bg-img.png) no-repeat center;
     background-size: cover;
     height: 428px;
 }
@@ -1564,7 +1564,7 @@ h5 {
 }
 
 .blogs-section {
-    padding-bottom: 250px;
+    padding-bottom: 100px;
 }
 
 .blog-txt-con>a {
@@ -2279,7 +2279,7 @@ h5 {
 }
 
 .inquiry-section {
-    background: url(../images/inquiry-bg-img.jpg) no-repeat center;
+    background: url(../images/bg/inquiry-bg-img.png) no-repeat center;
     background-size: cover;
     height: 760px;
 }
@@ -3428,6 +3428,7 @@ h5 {
     width: 100%;
     max-height: 280px !important;
     margin-top: 5%;
+    height: 640px;
 }
 
 .sub-banner-inner-con h1,
@@ -3550,6 +3551,7 @@ h5 {
     background-size: cover;
     max-height: 280px !important;
     margin-top: 5%;
+    height: 640px;
 }
 
 /* service page styling end */
@@ -4228,25 +4230,32 @@ input[type="date"]:focus {
     text-align: center;
     padding: 5%;
 }
+.about-details-main-section .publications .item-box,
+.about-details-main-section .abstracts .item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .about-details-main-section .publications .item,
 .about-details-main-section .abstracts .item{
     border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1% 1.5% 2.5%;
+    padding: 1% 0.5% 2.5%;
+    max-width: 325px;
 }
 .about-details-main-section .publications img,
 .about-details-main-section .abstracts img {
-    border: 2px solid var(--accent);
-    margin: 1%;
-    max-height: 300px;
+    border: 1px solid var(--accent);
 }
 .about-details-main-section .publications h6 {
     color: var(--accent);
     min-height: 20%;
+    margin: 2.5% 0%;
 }
 .about-details-main-section .abstracts h6 {
     color: var(--accent);
-    min-height: 30%;
+    min-height: 25%;
+    margin: 2.5% 0%;
 }
 .about-details-main-section .publications .links,
 .about-details-main-section .abstracts .links {

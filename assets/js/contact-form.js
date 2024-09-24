@@ -112,6 +112,7 @@ jQuery(document).ready(function () {
             }, function (error) {
                 jQuery("#form_result").html('<span class="form-error alert alert-danger d-block">There was an error sending your message. Please try again later.</span>');
                 console.log("Form submission failed! Try again.", JSON.stringify(contactform, null, 2), error);
+                jQuery("#contactpage")[0].reset();
                 setTimeout(function () {
                     jQuery("#form_result").fadeOut("slow", function () {
                         jQuery("#form_result").html('');

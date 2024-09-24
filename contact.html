@@ -120,7 +120,7 @@
                             <span class="sub-txt d-block" data-aos="fade-up" data-aos-duration="700">Book With Us Now</span>
                             <h2 data-aos="fade-up" data-aos-duration="700">Book an Appointment</h2>
                             <p data-aos="fade-up" data-aos-duration="700">Conveniently book your appointment with our top gastrosurgeons in South India for expert care.</p>
-                            <form id="appointment-form">
+                            <form id="appointmentModalForm">
                                 <!-- Name Field -->
                                 <div class="form-group row">
                                     <div class="col-md-12">
@@ -262,7 +262,7 @@
                         <span class="sub-txt d-block" data-aos="fade-up" data-aos-duration="700">Get in Touch</span>
                         <h2 data-aos="fade-up" data-aos-duration="700">Send Us a Message</h2>
                         <p data-aos="fade-up" data-aos-duration="700">Have any questions or need more information? We're here to help. Drop us a message, and we'll get back to you promptly.</p>
-                        <form class="form-box" method="post" id="contactpage">
+                        <form class="form-box" id="contactpage">
                             <ul class="list-unstyled ">
                                 <li data-aos="fade-up" data-aos-duration="700">
                                     <input type="text" name="fname" id="fname" placeholder="First name:">
@@ -273,15 +273,15 @@
                                     <i class="fas fa-user"></i>
                                 </li>
                                 <li data-aos="fade-up" data-aos-duration="700">
-                                    <input type="email" placeholder="Email address:" name="email" id="email">
+                                    <input type="email" name="email" id="contact-email" placeholder="Email address:">
                                     <i class="fas fa-envelope"></i>
                                 </li>
                                 <li data-aos="fade-up" data-aos-duration="700">
-                                    <input type="tel" name="phone" id="phone" placeholder="Phone number">
+                                    <input type="tel" name="phone" id="contact-phone" placeholder="Phone number">
                                     <i class="fas fa-phone-alt"></i>
                                 </li>
                                 <li data-aos="fade-up" data-aos-duration="700">
-                                    <textarea placeholder="Message" name="subject" id="subject"></textarea>
+                                    <textarea name="subject" id="subject" placeholder="Message"></textarea>
                                 </li>
                             </ul>
                             <div class="submit-btn" data-aos="fade-up" data-aos-duration="700">
@@ -290,6 +290,7 @@
                                 </button>
                             </div>
                         </form>
+                        <div id="form_result" class="my-2"></div>
                     </div>
                 </div>
             </div>

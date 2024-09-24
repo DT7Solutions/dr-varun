@@ -1167,6 +1167,7 @@ h5 {
     display: grid;
     gap: 30px;
     grid-template-columns: 50.5% 45%;
+    align-items: center;
 }
 
 .process-left-sec figure {
@@ -2921,8 +2922,9 @@ h5 {
 /* index3 service styling end */
 /* index3 about styling start */
 .index3-about-section .about-inner-con {
+    display: grid;
     gap: 25px !important;
-    align-items: revert;
+    align-items: center;
     grid-template-columns: 42.8% 51.3%;
 }
 
@@ -4241,7 +4243,8 @@ input[type="date"]:focus {
 }
 
 /* About Detailed Section */
-.index3-about-section .about-txt-con p {
+.index3-about-section .about-txt-con p,
+.about-family-main-section .process-inner-con p {
     font-size: 14px !important;
 }
 .about-details-main-section .bio-info .links a {

@@ -133,10 +133,10 @@ document.addEventListener("DOMContentLoaded", function () {
         emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", appointmentData)
             .then(function (response) {
                 document.getElementById("successMessage").classList.remove("d-none");
-                console.log("Success!", response.status, response.text);
+                console.log("Form submitted successfully!", JSON.stringify(appointmentData, null, 2), response.status, response.text);
             }, function (error) {
                 document.getElementById("errorMessage").classList.remove("d-none");
-                console.log("Failed...", error);
+                console.log("Form submitted  Failed Try Again!", JSON.stringify(appointmentData, null, 2), error);
             });
     });
 });

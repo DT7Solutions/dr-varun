@@ -117,7 +117,7 @@ h5 {
     position: absolute;
     padding: 0;
     overflow: hidden;
-    top: 20px;
+    top: 30px;
 }
 
 .header-con .navbar-light .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
@@ -1690,7 +1690,7 @@ h5 {
 }
 
 .footer-main-section {
-    padding-bottom: 90px;
+    padding-bottom: 50px;
 }
 
 .footer-boxes {
@@ -1727,12 +1727,13 @@ h5 {
 .footer-inner-sec {
     display: grid;
     gap: 15px;
-    grid-template-columns: 35% 20% 25% 20%;
+    grid-template-columns: 30% 15% 35% 20%;
     justify-content: center;
 }
 
 .footer-text-boxes ul li a:hover {
-    color: var(--button-color);
+    color: var(--third-color);
+    text-decoration: none;
 }
 
 .footer-logo-con figure {
@@ -1757,6 +1758,11 @@ h5 {
 .footer-text-boxes {
     padding-left: 5px;
     margin-top: -4px;
+}
+
+.footer-services {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .footer-text-boxes h4 {
@@ -1799,13 +1805,13 @@ h5 {
 }
 
 .copy-rihgt-sec p a {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
     color: var(--primary-color);
     text-decoration: none;
 }
 
 .copy-rihgt-sec p a:hover {
-    font-size: 16px;
     color: var(--third-color);
 }
 

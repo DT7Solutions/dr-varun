@@ -2010,10 +2010,14 @@
     }
 
     .footer-inner-sec {
-        gap: 20px;
-        grid-template-columns: 100%;
+        gap: 15px;
+        grid-template-columns: 60% 40%;
         margin: 2.5%;
         margin-top: -5%;
+    }
+
+    .footer-services {
+        grid-template-columns: 50% 50%;
     }
 
     .footer-main-section::after {
@@ -2744,7 +2748,7 @@
     }
 
     .testimonial-inner-sec .review-details-box {
-        padding: 25px 15px;
+        padding: 10px 5px;
     }
 
     .customer-status {
@@ -3526,7 +3530,7 @@
     }
 
     .testimonial-inner-sec .carousel-item {
-        padding: 20px 10px;
+        padding: 10px 5px;
     }
 
     .testimonial-main-sec .carousel-item p {
@@ -3594,6 +3598,10 @@
     .footer-text-boxes ul li {
         display: block;
         width: fit-content;
+    }
+
+    .footer-services {
+        grid-template-columns: 100%;
     }
 
     .footer-boxes {
